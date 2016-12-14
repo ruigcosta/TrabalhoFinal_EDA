@@ -21,6 +21,7 @@ public:
 
 
 //Teste ao github
+//O teste resultou
 class LinkedDupleList {
 public:
 	ItemDL *head;
