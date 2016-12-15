@@ -23,7 +23,7 @@ int main() {
 	lista.addOrdered('b', 2);
 
 
-	lista.mostra();
+	lista.mostraLista();
 	
 	while (lista.head != lista.tail) {
 		Tree *left = lista.RemoveFirst();
@@ -34,7 +34,7 @@ int main() {
 		novo->data->root->rigth = rigth->root;
 	}
 
-	lista.mostra();
+	lista.mostraLista();
 	
 	system("pause");
 

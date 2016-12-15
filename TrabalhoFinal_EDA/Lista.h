@@ -79,6 +79,7 @@ public:
 		}
 		return novo;
 	}
+
 	Tree* RemoveFirst() {
 		if (head == NULL)
 			return NULL;
@@ -97,11 +98,12 @@ public:
 		}
 			
 	}
-	void mostra() {
+
+	void mostraLista() {
 		ItemDL *aux=head;
 		while (aux!=NULL)
 		{
-			aux->data->mostrar();
+			aux->data->mostrarArvore();
 			aux = aux->next;
 		}
 		cout << endl;

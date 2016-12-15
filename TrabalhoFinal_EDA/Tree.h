@@ -42,9 +42,15 @@ public:
 	}
 	
 	
-	void mostrar() {
-		mostrar(root, 0, 0);
+	void mostrarArvore() {
+		mostrarArvore(root, 0, 0);
 	}
+
+	//void mostrarBinario( char caracter )
+	//{
+	//	Nodo * actual =
+	//}
+
 
 private:
 	void _Tree(Nodo *actual) {
@@ -56,17 +62,18 @@ private:
 	}
 
 	
-	void mostrar(Nodo *actual, int nivel, int aux) {
+	void mostrarArvore(Nodo *actual, int nivel, int aux) {
 		if (actual != NULL) {
-			mostrar(actual->rigth, nivel + 1, 1);
+			mostrarArvore(actual->rigth, nivel + 1, 1);
 			for (int i = 0; i < nivel; i++)
 				cout << "  ";
 			if (aux > 0) cout << "/";
 			if (aux < 0) cout << "\\";
 			cout << actual->ch << ":" << actual->ocorrencia << endl;
-			mostrar(actual->left, nivel + 1, -1);
+			mostrarArvore(actual->left, nivel + 1, -1);
 		}
 	}
+
 	
 };
 
