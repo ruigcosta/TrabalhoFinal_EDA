@@ -1,5 +1,7 @@
 #pragma once
 #include <iostream>
+#include <string>
+
 
 using namespace std;
 
@@ -74,7 +76,8 @@ private:
 		}
 	}
 
-	
+	//string 
+	//string charBinary = "";
 };
 
 

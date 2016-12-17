@@ -9,9 +9,21 @@ using namespace std;
 
 int main() {
 
+	string textoTeste = "";
+	textoTeste += "Este será o texto de teses enquanto não colocamos a leituras de ficheiro a funcionar.";
+	//Terminado este teste, vamos inserir as mudanças de linha
+
+
 	LinkedDupleList lista;
 	//char *str = "o popo do papa leva o bebe";
 	
+	for ( int contChar = 0; contChar < textoTeste.length(); contChar++ )
+	{
+		char caracter = textoTeste[contChar];
+		
+
+	}
+
 	lista.addOrdered('o',5);
 	lista.addOrdered(' ', 6);
 	lista.addOrdered('p', 4);
