@@ -10,12 +10,10 @@ using namespace std;
 int main() {
 
 	string textoTeste = "";
-	textoTeste += "Este será o texto de teses enquanto não colocamos a leituras de ficheiro a funcionar.";
+	textoTeste += "Este será o texto de testes enquanto não colocamos as leituras de ficheiros a funcionar.";
 	//Terminado este teste, vamos inserir as mudanças de linha
 
-
-	LinkedDupleList lista;
-	//char *str = "o popo do papa leva o bebe";
+	DoubleLinkedList lista;
 	
 	for ( int contChar = 0; contChar < textoTeste.length(); contChar++ )
 	{
@@ -41,7 +39,7 @@ int main() {
 		Tree *left = lista.RemoveFirst();
 		Tree *rigth = lista.RemoveFirst();
 
-		ItemDL * novo = lista.addOrdered('\0', left->root->ocorrencia + rigth->root->ocorrencia);
+		DLListItem * novo = lista.addOrdered('\0', left->root->ocorrencia + rigth->root->ocorrencia);
 		novo->data->root->left = left->root;
 		novo->data->root->rigth = rigth->root;
 	}

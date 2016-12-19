@@ -12,26 +12,24 @@ public:
 };
 
 
-class ItemDL {
+class DLListItem {
 public:
 	Tree *data;
-	ItemDL *next;
-	ItemDL *previous;
+	DLListItem *next;
+	DLListItem *previous;
 };
 
 
-//Teste ao github
-//O teste resultou
-class LinkedDupleList {
+class DoubleLinkedList {
 public:
-	ItemDL *head;
-	ItemDL *tail;
-	LinkedDupleList() {
+	DLListItem *head;
+	DLListItem *tail;
+	DoubleLinkedList() {
 		head = NULL;
 		tail = NULL;
 	}
-	~LinkedDupleList() {
-		ItemDL *aux = head;
+	~DoubleLinkedList() {
+		DLListItem *aux = head;
 		while (aux != NULL) {
 			head = head->next;
 			delete aux->data;
@@ -44,8 +42,8 @@ public:
 		return head == NULL || tail == NULL;
 	}
 	
-	ItemDL* addOrdered(char ch,int ocorrencia) {
-		ItemDL *novo = new ItemDL();
+	DLListItem* addOrdered(char ch,int ocorrencia) {
+		DLListItem *novo = new DLListItem();
 		novo->data = new Tree();
 		novo->data->add(ch, ocorrencia);
 		novo->next = NULL;
@@ -66,7 +64,7 @@ public:
 				tail = novo;
 			}	
 			else {
-				ItemDL*aux = head;
+				DLListItem*aux = head;
 				while (aux->data->root->ocorrencia < ocorrencia ||
 					(aux->data->root->ocorrencia==ocorrencia &&aux->data->root->ch< ch))
 					aux = aux->next;
@@ -100,7 +98,7 @@ public:
 	}
 
 	void mostraLista() {
-		ItemDL *aux=head;
+		DLListItem *aux=head;
 		while (aux!=NULL)
 		{
 			aux->data->mostrarArvore();
