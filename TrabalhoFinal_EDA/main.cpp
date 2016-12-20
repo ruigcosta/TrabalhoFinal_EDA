@@ -4,6 +4,7 @@
 #include <sstream>
 #include "Lista.h"
 #include "Tree.h"
+#include "ListaBin.h"
 
 using namespace std;
 
@@ -15,13 +16,7 @@ int main() {
 
 	DoubleLinkedList lista;
 	
-	for ( int contChar = 0; contChar < textoTeste.length(); contChar++ )
-	{
-		char caracter = textoTeste[contChar];
-		
-
-	}
-
+	//Construção da Lista Ordenada e da Árvore de Huffman
 	lista.addOrdered('o',5);
 	lista.addOrdered(' ', 6);
 	lista.addOrdered('p', 4);
@@ -47,6 +42,16 @@ int main() {
 	lista.mostraLista();
 	
 	system("pause");
+
+	//for ( int contChar = 0; contChar < textoTeste.length(); contChar++ )
+	//{
+	//	char caracter = textoTeste[contChar];
+	//}
+	ListaBinElem* xpto = new ListaBinElem( 'a', "1011001" );
+	xpto->print();
+	cout << endl;
+	system( "pause" );
+
 
 	return 0;
 }

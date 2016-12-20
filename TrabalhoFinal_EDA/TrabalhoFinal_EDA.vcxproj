@@ -114,10 +114,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Lista.h" />
+    <ClInclude Include="ListaBin.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="Tree.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="ficheiro.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TrabalhoFinal_EDA.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
