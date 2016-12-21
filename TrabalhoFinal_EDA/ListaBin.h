@@ -120,6 +120,7 @@ public:
 		{
 			elem->print();
 			cout << endl;
+			elem = elem->next;
 		}
 	}
 	//Métodos necessários

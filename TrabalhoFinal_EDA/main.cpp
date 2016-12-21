@@ -41,17 +41,29 @@ int main() {
 
 	lista.mostraLista();
 	
-	system("pause");
+	cout << endl;  system( "pause" ); cout << endl;
 
 	//for ( int contChar = 0; contChar < textoTeste.length(); contChar++ )
 	//{
 	//	char caracter = textoTeste[contChar];
 	//}
-	ListaBinElem* xpto = new ListaBinElem( 'a', "1011001" );
-	xpto->print();
-	cout << endl;
-	system( "pause" );
 
+	ListaBin* listaBin = new ListaBin();
+	listaBin->addElement( 'a', "101111" );
+	listaBin->addElement( 'b', "101111" );
+	listaBin->addElement( 'c', "101111" );
+	listaBin->addElement( 'd', "101111" );
+	listaBin->addElement( 'e', "101111" );
+	listaBin->addElement( 'f', "101111" );
+	listaBin->addElement( 'g', "101111" );
+	listaBin->addElement( 'h', "101111" );
+	listaBin->addElement( 'i', "101111" );
+	listaBin->addElement( 'j', "101111" );
+	listaBin->addElement( 'k', "101111" );
+	listaBin->addElement( 'l', "101111" );
 
+	listaBin->printList();
+
+	cout << endl;  system( "pause" ); cout << endl;
 	return 0;
 }
