@@ -32,10 +32,19 @@
     <ClInclude Include="ListaBin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="LerFich\LerFich_1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LerFich.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ficheiro.txt">
       <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="LerFich\LerFich_0.cpp">
+      <Filter>Source Files</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>

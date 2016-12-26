@@ -110,9 +110,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <Text Include="LerFich\LerFich_0.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="LerFich.h" />
+    <ClInclude Include="LerFich\LerFich_1.h" />
     <ClInclude Include="Lista.h" />
     <ClInclude Include="ListaBin.h" />
     <ClInclude Include="resource.h" />
