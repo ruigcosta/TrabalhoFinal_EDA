@@ -111,9 +111,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <Text Include="LerFich\LerFich_0.cpp" />
+    <ClCompile Include="LearningResources\cod_huffman\huff_funct.cpp" />
+    <ClCompile Include="LearningResources\cod_huffman\huff_main.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="LearningResources\cod_huffman\huffman.h" />
+    <ClInclude Include="LearningResources\cod_huffman\huff_funct.h" />
+    <ClInclude Include="LearningResources\cod_huffman\huff_head.h" />
+    <ClInclude Include="LearningResources\cod_huffman\huff_main.h" />
     <ClInclude Include="LerFich.h" />
     <ClInclude Include="LerFich\LerFich_1.h" />
     <ClInclude Include="Lista.h" />
